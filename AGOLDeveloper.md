@@ -3,7 +3,7 @@ TreeCollection Hosted Feature Layer
 ID: 6b609341784b43d2a2dd38b0eab9a5da
 
 Layer URL:
-https://services1.arcgis.com/pMeXRvgWClLJZr3s/REST URL: arcgis/rest/services/treecollection/FeatureServer
+https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/treecollection/FeatureServer
 
 REST URL:
 https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/treecollection/FeatureServer?token=IitFX7EviLRVQyRhEjUuf1PnPbgrF7wb8Ign1tP_kusJcVBSITr2AoMyB6zSKMxczO4p_oo1tMNsJUVZiMjDD5Z7MoSFjLlPw5Bm_aO8OmF2QhUUzPt1sRkmbx9n_4UjCRTkLQ4LHPGHKtu6_vpVbsp7xrasGQ11ULXz3HFOFSA2iJ0TJfpohfF8OyhSQ-XEBh9llrgDlMWJCX8AB9tmShOJJxT8WLUU_RiRWjjHiItoUQQFUTjsGmhqlKDo8BlimmnlhoQdXdF3WOzos8ZwwKuyTuBgTPHxIeu9ytis_B8.
