@@ -29,53 +29,75 @@
       esriConfig.apiKey = "AAPK1e8cb35859ff468ea471f2bbf63247beZcov5emj7qTv8ak5tfikBGhjMHPIe4tGhNjSVho_WLEXk0R7pfMs8uDSvgV7dS9U";
     
       const map = new Map({
-        basemap: "arcgis-topographic" //Basemap layer service
+        basemap: "arcgis-dark-gray" //Basemap layer service
       });
     
+      // Centering map view around Paris
       const view = new MapView({
         map: map,
-        center: [48.857253034479875, 2.3434028868523824], //Longitude, latitude
-        zoom: 10,
+        center: [2.364124,48.859794], //Longitude, latitude
+        zoom: 11,
         container: "viewDiv"
      });
     
      const graphicsLayer = new GraphicsLayer();
      map.add(graphicsLayer);
     
-     // Create a polygon geometry
+     // Create heart polygon geometry
      const polygon = {
         type: "polygon",
         rings: [
-            [48.87918063465221, 2.3424202152945255], //Longitude, latitude
-            [48.889653742029445, 2.32695673553072], //Longitude, latitude
+            [2.34671, 48.88694], //Longitude, latitude
+            [2.36216, 48.89688], //Longitude, latitude
+            [2.3807, 48.90297], //Longitude, latitude
+            [2.39924, 48.90161], //Longitude, latitude
+            [2.41263, 48.89326], //Longitude, latitude
+            [2.41229, 48.88017], //Longitude, latitude
+            [2.40473, 48.86775], //Longitude, latitude
+            [2.39512, 48.85578], //Longitude, latitude
+            [2.38448, 48.84268], //Longitude, latitude
+            [2.37177, 48.83002], //Longitude, latitude
+            [2.35838, 48.81872], //Longitude, latitude
+            [2.33881, 48.82958], //Longitude, latitude
+            [2.32165, 48.8411], //Longitude, latitude
+            [2.3062, 48.85262], //Longitude, latitude
+            [2.29178, 48.86482], //Longitude, latitude
+            [2.28354, 48.87611], //Longitude, latitude
+            [2.2832, 48.88627], //Longitude, latitude
+            [2.2935, 48.89462], //Longitude, latitude
+            [2.31272, 48.90049], //Longitude, latitude
+            [2.33195, 48.89597], //Longitude, latitude
+            [2.34671, 48.88694], //Longitude, latitude
         ]
      };
     
+    // Styling polygon
      const simpleFillSymbol = {
         type: "simple-fill",
-        color: [227, 139, 79, 0.8],  // Orange, opacity 80%
+        color: [255, 0, 0, 0.75],  // Red, 75% opacity
         outline: {
-            color: [255, 255, 255],
-            width: 1
+            color: [128, 0, 32],  // Burgandy outline
+            width: 5
         }
      };
-    
+     // Creating popup when polygon is clicked
      const popupTemplate = {
         title: "{Name}",
-        content: "{Description}"
+        content: "{Photo}"
      }
+     // Filling in popup attributes
      const attributes = {
-        Name: "Graphic",
-        Description: "Paris: The City of Love"
+        Name: "Paris: The City of Love!",
+        Photo: {sourceURL: '{https://www.discoverwalks.com/blog/wp-content/uploads/2019/11/photo-1543349689-9a4d426bee8e-816x591.jpg}'}
      }
-    
+    // Applying polygon attributes to graphic
      const polygonGraphic = new Graphic({
         geometry: polygon,
         symbol: simpleFillSymbol,
     
         attributes: attributes,
         popupTemplate: popupTemplate
-    
+    // Adding polygon layer
      });
      graphicsLayer.add(polygonGraphic);
     
