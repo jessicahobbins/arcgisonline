@@ -1,9 +1,10 @@
-TreeCollection Hosted Feature Layer
+## AGOLTreeCollection Hosted Feature Layer
 
-ID: 6b609341784b43d2a2dd38b0eab9a5da
+# ID:
+292fefa76f9648dfbe8dc0b74a0f616c
 
-Layer URL:
-https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/treecollection/FeatureServer
+# Layer URL:
+https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/agoltreecollection/FeatureServer
 
-REST URL:
-https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/treecollection/FeatureServer?token=IitFX7EviLRVQyRhEjUuf1PnPbgrF7wb8Ign1tP_kusJcVBSITr2AoMyB6zSKMxczO4p_oo1tMNsJUVZiMjDD5Z7MoSFjLlPw5Bm_aO8OmF2QhUUzPt1sRkmbx9n_4UjCRTkLQ4LHPGHKtu6_vpVbsp7xrasGQ11ULXz3HFOFSA2iJ0TJfpohfF8OyhSQ-XEBh9llrgDlMWJCX8AB9tmShOJJxT8WLUU_RiRWjjHiItoUQQFUTjsGmhqlKDo8BlimmnlhoQdXdF3WOzos8ZwwKuyTuBgTPHxIeu9ytis_B8.
+# REST URL:
+https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/agoltreecollection/FeatureServer?token=r9FcyjrdUi3LfEEBO_kpHknsiuhNys65qtams5cqKoWxxelMGEQ9mG-LQhndrwZS0kLbcvTamqZFZnPqJZ92qSGq5FgUgZoPpxeh_P5UthjYXArKc5oN5iRLPPtQviXohq-zUTOLUgmh7VAk9zBsysp9EyH0eikJWd6Ote6gFgI_iT8svHC2EIoHJn4UJE0-IP9YuLo8YFtlqLw2JL5-OGZjJWmW8DHIKK3EmFYBhIhZAnDpi-A3fsstYRtqXAsQDn0UcfPs4EufGYbMPivjoW1yyUBXedVwS4ahyHbDCvQ.
