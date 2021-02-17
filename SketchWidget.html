@@ -1,56 +1,89 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Sketch widget | Sample | ArcGIS API for JavaScript 4.18</title>
 
-    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.18/"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Sketch widget | Sample | ArcGIS API for JavaScript 4.18</title>
 
-    <style>
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-    </style>
-    <script>
-      require(["esri/widgets/Sketch", "esri/Map", "esri/layers/GraphicsLayer", "esri/views/MapView"], function(
-        Sketch,
-        Map,
-        GraphicsLayer,
-        MapView
-      ) {
-        const layer = new GraphicsLayer();
+  <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.18/"></script>
 
-        const map = new Map({
-          basemap: "topo-vector",
-          layers: [layer]
-        });
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
 
-        const view = new MapView({
-          container: "viewDiv",
-          map: map,
-          zoom: 5,
-          center: [90, 45]
-        });
+    /* Navbar container */
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(0, 0, 0);
+      font-family: Arial;
+    }
 
-        const sketch = new Sketch({
-          layer: layer,
-          view: view,
-          // graphic will be selected as soon as it is created
-          creationMode: "update"
-        });
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 12px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-        view.ui.add(sketch, "top-right");
+    /* Adds a grey background color to navbar links on hover */
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: rgb(48, 48, 48);
+    }
+  </style>
+  <script>
+    require(["esri/widgets/Sketch", "esri/Map", "esri/layers/GraphicsLayer", "esri/views/MapView"], function (
+      Sketch,
+      Map,
+      GraphicsLayer,
+      MapView
+    ) {
+      const layer = new GraphicsLayer();
+
+      const map = new Map({
+        basemap: "topo-vector",
+        layers: [layer]
       });
-    </script>
-  </head>
 
-  <body>
-    <div id="viewDiv"></div>
-  </body>
+      const view = new MapView({
+        container: "viewDiv",
+        map: map,
+        zoom: 5,
+        center: [90, 45]
+      });
+
+      const sketch = new Sketch({
+        layer: layer,
+        view: view,
+        // graphic will be selected as soon as it is created
+        creationMode: "update"
+      });
+
+      view.ui.add(sketch, "top-right");
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+
+  <!--Navbar-->
+  <div class="navbar">
+    <a href="DisplayAMap.html" class="topbutton">Display a Map</a>
+    <a href="AddPointLinePolygon.html" class="topbutton">Add Point, Line, Polygon</a>
+    <a href="DisplayYourLocation.html" class="topbutton">Display Your Location</a>
+    <a href="SketchWidget.html" class="topbutton">Sketch Widget</a>
+    <a href="EnhancedTutorial.html" class="topbutton">Enhanced Point, Line, Polygon Tutorial</a>
+  </div>
+
 </html>
