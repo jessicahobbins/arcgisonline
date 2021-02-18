@@ -7,4 +7,4 @@
 https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/agoltreecollection/FeatureServer
 
 ## REST URL:
-https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/agoltreecollection/FeatureServer?token=r9FcyjrdUi3LfEEBO_kpHknsiuhNys65qtams5cqKoWxxelMGEQ9mG-LQhndrwZS0kLbcvTamqZFZnPqJZ92qSGq5FgUgZoPpxeh_P5UthjYXArKc5oN5iRLPPtQviXohq-zUTOLUgmh7VAk9zBsysp9EyH0eikJWd6Ote6gFgI_iT8svHC2EIoHJn4UJE0-IP9YuLo8YFtlqLw2JL5-OGZjJWmW8DHIKK3EmFYBhIhZAnDpi-A3fsstYRtqXAsQDn0UcfPs4EufGYbMPivjoW1yyUBXedVwS4ahyHbDCvQ.
+https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/agoltreecollection/FeatureServer?token=.
